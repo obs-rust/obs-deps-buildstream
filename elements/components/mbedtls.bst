@@ -10,7 +10,7 @@ depends:
   - public-stacks/runtime-minimal.bst
 
 variables:
-  mbedtls-version: 3.6.4
+  mbedtls-version: 3.6.7
   cmake-local: >-
     -DCMAKE_POSITION_INDEPENDENT_CODE=ON
     -DUSE_SHARED_MBEDTLS_LIBRARY=ON
@@ -23,6 +23,6 @@ sources:
 - kind: tar
   url:
     github:Mbed-TLS/mbedtls/releases/download/mbedtls-%{mbedtls-version}/mbedtls-%{mbedtls-version}.tar.bz2
-  ref: ec35b18a6c593cf98c3e30db8b98ff93e8940a8c4e690e66b41dfc011d678110
+  ref: a7e8bcbec0e6f761b4af24f25677626b35f762f68eef79c08677a363212d11f6
 - kind: patch
   path: patches/mbedtls/0001-array-bounds-error-fix.patch
