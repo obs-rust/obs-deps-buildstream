@@ -16,6 +16,8 @@ jobs:
   make-release:
     name: Create and Upload Release
     runs-on: ubuntu-24.04
+    permissions:
+      contents: write
     needs: build-project
     steps:
       - name: Download Build Artifacts
