@@ -6,6 +6,12 @@ path = ["project.conf", "elements/**", "include/**"]
 SPDX-FileCopyrightText = "2026 OBS Project"
 SPDX-License-Identifier = "MIT"
 
+# obs-rust Constitution link
+[[annotations]]
+path = ["CONSTITUTION.md"]
+SPDX-FileCopyrightText = "2026 obs-rust Project"
+SPDX-License-Identifier = "MIT"
+
 # GHA files
 [[annotations]]
 path = [".github/**"]
